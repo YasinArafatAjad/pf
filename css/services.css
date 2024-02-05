@@ -1,0 +1,36 @@
+/* Service Css Start */
+.service-item{
+    position: relative;
+    z-index: 1;
+}
+.service-item::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,rgba(221, 13, 13, 0.589),rgba(104, 4, 4, 0.445),transparent);
+    opacity: 0;
+    transition: all linear 0.3s;
+    z-index: -1;
+}
+.service-item:hover::before{
+    opacity: 1;
+}
+/* service icon */
+.serve_icon{
+    fill:rgba(202, 196, 196, 0.932);
+    border-radius: 50%;
+    transition: all linear .5s;
+}
+.service-item:hover .serve_icon {
+    fill:#ffffff;
+    box-shadow: 0 0 20px 0 #000,0 0 35px 0 #fff;
+}
+/* collaps btn */
+.show_btn{
+    color: #fc0000;
+    z-index: 99999;
+}
+/* Sevice Css End */

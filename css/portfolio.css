@@ -1,0 +1,74 @@
+/* portfolio navbar */
+/* port nav */
+*{
+    cursor: none !important;
+}
+.portnav_btn {
+    background: linear-gradient(93deg, #0A0A0A 0.05%, rgba(237, 1, 1, 0.50) 151.17%); 
+    position: relative;
+    z-index: 1;
+}
+.portnav_btn:before{
+    content: '';    
+    background: linear-gradient(93deg, rgba(237, 1, 1, 0.50) 0%, #0A0A0A 70.41%); 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0.75rem;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: -1;
+}
+.portnav_btn:hover::before{
+    opacity: 1;
+}
+/* port_card */
+.portfolio_card{
+    height: 60vh;
+    background: linear-gradient(93deg, #0A0A0A 0.05%, rgba(237, 1, 1, 0.50) 151.17%);
+    transition: all opacity 0.5s;
+}
+.portfolio_card:hover{
+    background: linear-gradient(93deg, rgba(237, 1, 1, 0.50) 0%, #0A0A0A 70.41%);
+}
+.project_img{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    transition: all linear 5s;
+}
+.portfolio_card:hover .project_img{
+    background-position: bottom;
+}
+.portfolio_card_dec,.portfolio_card_name{
+    z-index: 111;
+}
+/* port page btn */
+.port_all .portfolio_see_all {
+    background: linear-gradient(93deg, rgba(237, 1, 1, 0.50) 0%, #0A0A0A 70.41%); 
+    position: relative;
+    z-index: 1;
+}
+.port_all .portfolio_see_all::before{
+    content: '';
+    background: linear-gradient(93deg, #0A0A0A 0.05%, rgba(237, 1, 1, 0.50) 151.17%); 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0.75rem;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s;
+}
+.port_all .portfolio_see_all:hover::before{
+    opacity: 1;
+}
+.portfolio_card{
+    margin: 0 20px;
+}

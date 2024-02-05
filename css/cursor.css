@@ -1,0 +1,43 @@
+/* GLobal */
+
+  /* main */
+  .cursor {
+    z-index: 99999999999999999999999999999999999999999999;
+    position: absolute;
+}
+  /* Dot */
+  .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -7px;
+    margin-left: -7px;
+    border-radius: 50%;
+    transition: ease .8s;
+    pointer-events: none;
+  }
+  .dot:nth-child(5){
+    background: #000;
+    transition: ease .01s;
+    transform: scale(1);
+  }
+  .dot:nth-child(4){
+    background: #501919;
+    transition: ease .12s;
+    transform: scale(.8);
+  }
+  .dot:nth-child(3){
+    background: #971212;
+    transition: ease .14s;
+    transform: scale(.6);
+  }
+  .dot:nth-child(2){
+    background: #ca4016;
+    transition: ease .16s;
+    transform: scale(.4);
+  }
+  .dot:nth-child(1){
+    background: #ffffff;
+    transition: ease .2s;
+    transform: scale(.3);
+  }

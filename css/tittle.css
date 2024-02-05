@@ -1,0 +1,22 @@
+/* .title h2::before {
+    content: '';
+    height: 72%;
+    width: 22%;
+    box-shadow: 7px 5px 19px 5px rgba(249, 105, 61, 0.778);
+    background: rgb(45, 35, 35);
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    transform: translateX(-50%) rotate(45deg);
+}
+.title h2::after {
+    content: '';
+    height: 72%;
+    width: 22%;
+    box-shadow: 7px 1px 19px 5px rgba(249, 105, 61, 0.778);
+    background: rgb(45, 35, 35);
+    position: absolute;
+    right: -43px;
+    top: 8px;
+    transform: translateX(-50%) rotate(45deg);
+} */
